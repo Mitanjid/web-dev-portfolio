@@ -7,6 +7,10 @@
     "wdth" 100;
 }
 /* shared styles */
+.secondary-bg{
+  background-color: #FFF8F3;
+}
+
 .text-primary {
   color: #fd8b08;
 }
@@ -16,7 +20,8 @@
 
 .btn-primary {
   background-color: #fd8b08;
-    color: #fff;
+    color: white;
+    border: none;
     font-size: 20px;
     font-weight: 600;
   padding: 18px 35px;
@@ -24,13 +29,23 @@
   text-decoration: none;
   border: none;
 }
+.section-title {
+  font-size: 35px;
+  font-weight: 800;
+  color: #181818;
+}
+.section-description {
+  font-size: 18px;
+  color: #757575;
+
+}
 /* Nav styles */
 
 nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 50px 100px;
+    margin: 0px 100px;
 }
 .nav-title{
    font-weight: 800; 
@@ -43,7 +58,7 @@ nav ul li {
 }
 nav ul li a {
     text-decoration: none;
-    font-size: 18px;
+    font-size: 20px;
 
 }
 
@@ -55,10 +70,12 @@ nav ul {
 
 /* header styles */
 
-background {
-  background: url("../assets/images/header-bg.jpg") no-repeat center center/cover;
-  height: 100vh;
-  width: 100%;
+.header{
+  background: url('../images/developer.png'), url('../images/header_bg.png');
+  background-repeat: no-repeat;
+  background-position: top left, bottom right;
+  background-size: 5.5%, 42%;
+
 }
 
 
@@ -68,23 +85,38 @@ background {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 0 35px 0 100px;
+  margin: 0 35px 0 200px;
 }
 
 .banner-content {
-  max-width: 600px;
+  max-width: 580px;
 }
 .banner-greetings{
   font-size: 45px;
-  font-weight: 800;
+  font-weight: 600;
+  margin: 0 0 10px 0;
+  
 }
 
 .banner-title{
   font-size: 85px;
   font-weight: 800;
+  margin: 0 0 10px 0;
 }
 .banner-profile-pic{
-  width: 580px;
+  width: 584px;
+  position: relative;
+  right: -110px;
 
+}
+
+/*main styles */
+main{
+  max-width: 1140px;
+  margin: 0, auto;
+}
+/* about section styles */
+.about{
+  border-radius: 10px;
 
 }
